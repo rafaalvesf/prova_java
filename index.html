@@ -1,0 +1,135 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Prova JavaScript</title>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="atualizaNome()">
+
+<header>
+  <h1>Nome Completo</h1>
+</header>
+
+<main>
+
+  <aside>
+    <h3>Informações</h3>
+    <ul>
+      <li>A avaliação é individual e deverá ser feita no editor de texto Sublime;</li>
+      <li>Leia atentamente tudo antes de começar e priorize as questões que julgarem mais fáceis;</li>
+      <li>Seu código deverá estar limpo, legível, corretamente identado e muito bem estruturado;</li>
+      <li>Renomeie a pasta do projeto web  para o seguinte formato: nome_sobrenome_RA;</li>
+    </ul>
+    <h3>Links Úteis</h3>
+    <ul>
+      <li><a href="https://w3schools.com" target="_blank">w3schools</a></li>
+      <li><a href="https://github.com/rwaldron/idiomatic.js/" target="_blank">Idiomatic.js</a></li>
+      <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">MDN Web Docs</a></li>
+    </ul>
+  </aside>
+
+  <div id="container">
+    <section>
+      <header>
+        <h3>Questão 1</h3>
+        <p>
+          Implemente a função atualizaNome(); que adiciona o seu nome completo
+          no elemento title e no elemento h1, dentro do cabeçalho desta
+          página Web.
+        </p>
+      </header>
+    </section>
+    <section>
+      <header>
+        <h3>Questão 2</h3>
+        <p>
+          Escreva um programa JavaScript que calcule a soma, subtração,
+          multiplicação e divisão de dois números; quando o usuário clicar
+          nos respectivos botões abaixo:
+        </p>
+      </header>
+      <div class="content">
+        <form action="">
+          <div class="input-group">
+            <label for="numero-1">Número 1</label>
+            <input id="valor1" name="numero-1" type="text" value="" autofocus />
+          </div>
+
+          <div class="input-group">
+            <label for="numero-2">Número 2</label>
+            <input id="valor2" name="numero-2" type="text" value=""/>
+          </div>
+
+          <div class="input-group">
+            <label for="resultado">Resultado</label>
+            <input id="resultado" name="resultado" type="text" value="" readonly />
+          </div>
+
+          <div class="buttons-group">
+            <button onclick="somando()" type="button" name="soma">+ Somar</button>
+            <button onclick="subtrai()" type="button" name="subtracao">− Subtrair</button>
+            <button onclick="multiplica()" type="button" name="multiplicacao">× Multiplicar</button>
+            <button onclick="divide()" type="button" name="divisao">÷ Dividir</button>
+          </div>
+
+        </form>
+      </div>
+    </section>
+    <section>
+      <header>
+        <h3>Questão 3</h3>
+        <p>
+          Em cada uma das funções criadas na Questão 1, acrescente a
+          funcionalidade para que o valor do campo Resultado tenha a cor da fonte
+          verde (#2E7D32) se o resultado for positivo ou vermelho (#C62828) se o resultado
+          for negativo.
+        </p>
+      </header>
+    </section>
+    <section>
+      <header>
+        <h3>Questão 4</h3>
+        <p>
+          Implemente a funcionalidade de validação na Questão 1 caso um dos campos
+          estejam vazios. Ou seja, se o usuário não adicionar valores nos campos:
+          Número 1 e Número 2, e apertar um dos botões; a cor da borda do input
+          vazio deverá ficar laranja (#FF830F), e a página web exibirá uma
+          caixa de alerta informando o usuário para que ele adicione
+          algum valor numérico no campo vazio. Obs.: O valor padrão da cor da borda
+          é #DDDDDD.
+        </p>
+      </header>
+    </section>
+    <section>
+      <header>
+        <h3>Exercício 10 e 3</h3>
+        <p>
+          Realizando o exercício 10, precisamos retornar N primeiros valores de um vetor.
+          Após atribuir cada valor dos vetores clicando no botão abaixo, o primeiro número
+           aparecerá no console. Além disso, ele fará como pedido no exercício 3 e mostrará o maior npumero do vetor.
+        </p>
+        <button onclick="teste()">Vetor</button>
+      </header>
+    </section>
+    <section>
+      <header>
+        <h3>Exercício 4(LISTA)</h3>
+        <p>
+          Neste exercícioa proposta é criar uma estrutura de repetição que seja capaz de contar de 0 à 15 informando também 
+          se o número equivalente é par ou ímpar.
+        </p>
+        <button onclick="contar()">Contar</button>
+      </header>
+    </section>
+  </div>
+</main>
+<script src="js/main.js" charset="utf-8"></script>
+</body>
+</html>
